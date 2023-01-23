@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+:root{
+    --mainColor:white;
+    --secondaryColor:#8de3ff;
+    --fontColor: #183906;
+}
+
+.courses{
+    width: 90%;
+    padding: 20px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 20px;
+}
+.courseCard{
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+.cardFront>img{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    border-radius: 20px;
+}
+
+.dataBoxContainer{
+    display: flex;
+    background: var(--secondaryColor);
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+.dataBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background: var(--mainColor);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.dataBox>p{
+    width: 100%;
+    margin-right: 5px;
+}
+.dataBox>span{
+    background-color: var(--secondaryColor);
+    padding: 3px 10px;
+    color: var(--fontColor);
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+}
+
+.searchBox{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+    gap: 10px;
+}
+.searchBox input,.searchBox button,.tableCol>button{
+    border-radius: 10px;
+    border: 1px dashed #CDE990;
+    padding: 10px 20px;
+}
+.searchBox input{
+    margin-right: 10px;
+    outline: 1px solid transparent;
+}
+.searchBox button{
+    background: var(--secondaryColor);
+}
+.table{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    min-height: 85vh;
+    background: #18390610;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin: 20px 0;
+}
+.userContent{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+    margin-bottom: 70px;
+}
+.userContent>.tableRow{
+    display: flex;
+    gap: 2px;
+    justify-content: space-around;
+}
+.tableRow>.tableCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 5px;
+    min-height: 40px;
+    background: var(--mainColor);
+    border-radius: 3px;
+}
+.tableHeader>.tableCol{
+    background: var(--secondaryColor);
+}
+.userContent>.tableRow>.tableCol:nth-child(1){
+    width: 10%;
+}
+.userContent>.tableRow>.tableCol:nth-child(2){
+    width: 20%;
+}
+.userContent>.tableRow>.tableCol:nth-child(3){
+    width: 40%;
+}
+.userContent>.tableRow>.tableCol:nth-child(4){
+    width: 10%;
+}
+.userContent>.tableRow>.tableCol:nth-child(5){
+    width: 20%;
+}
+.pagination>button{
+    background-color: var(--secondaryColor);
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.pagination{
+    position: absolute;
+    bottom: 5px;
+}
+.extraActions{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.extraActions>button{
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 45%;
+    border: 1px solid rgba(255, 255, 255, 0.548);
+    background: var(--secondaryColor);
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+.deletePrompt{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+}
+.deletePrompt.show{
+    display: none;
+}
+.deletebox{
+    z-index: 11;
+    width: 400px;
+    height: 200px;
+    background: var(--mainColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.deletebox>h3{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.deletebox>.buttonbox>button{
+    width: 100px;
+    height: 40px;
+    margin: 0 10px;
+    border: 0;
+    border-radius: 10px;
+}
+.yes{
+    background: #8dff91;
+}
+.no{
+    background: #ff978d;
+}
+.idToAction{
+    color: var(--secondaryColor);
+}
+.fullbody{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}

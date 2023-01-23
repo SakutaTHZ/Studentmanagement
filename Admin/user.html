@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/main.js"></script>
+    <title>User</title>
+</head>
+<body>
+    <section class="dataBoxContainer">
+        <div class="dataBox">
+            <p>Total Users</p>
+            <span>3</span>
+        </div>
+        <div class="dataBox">
+            <p>Last Users</p>
+            <span>nahida</span>
+        </div>
+        <div class="dataBox">
+            <p>Your Role</p>
+            <span>Admin</span>
+        </div>
+    </section>
+    <section class="table">
+        <div class="searchBox">
+            <form action="">
+                <input type="text" name="" id="">
+                <button type="submit">Search</button>
+            </form>
+            <form action="">
+                <button>Reset</button>
+            </form>
+        </div>
+        <div class="userContent">
+            <div class="tableRow tableHeader">
+                <div class="tableCol">
+                    Id
+                </div>
+                <div class="tableCol">
+                    Name
+                </div>
+                <div class="tableCol">
+                    Email
+                </div>
+                <div class="tableCol">
+                    Role
+                </div>
+                <div class="tableCol">
+                    Actions
+                </div>
+            </div>
+            <div class="tableRow">
+                <div class="tableCol">
+                    1
+                </div>
+                <div class="tableCol">
+                    sakuta
+                </div>
+                <div class="tableCol">
+                    sakuta@gmail.com
+                </div>
+                <div class="tableCol">
+                    Admin
+                </div>
+                <div class="tableCol">
+                    <button onclick="showPopUp('S1')">Update</button>
+                    <button>Delete</button>
+                </div>
+            </div>
+            <div class="tableRow">
+                <div class="tableCol">
+                    2
+                </div>
+                <div class="tableCol">
+                    mai
+                </div>
+                <div class="tableCol">
+                    mai@gmail.com
+                </div>
+                <div class="tableCol">
+                    Admin
+                </div>
+                <div class="tableCol">
+                    <button onclick="showPopUp('S2')">Update</button>
+                    <button>Delete</button>
+                </div>
+            </div>
+        </div>
+        <div class="pagination">
+            <button><<</button>
+            <button>1</button>
+            <button>>></button>
+        </div>
+    </section>
+    <a class="extraActions">
+        <button>Add</button>
+    </a>
+</body>
+</html>
